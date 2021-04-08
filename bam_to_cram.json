@@ -2,5 +2,5 @@
   "bam_to_cram.bams": ["gs://genomics-public-data/platinum-genomes/bam/NA12878_S1.bam"],
   "bam_to_cram.ref": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
   "bam_to_cram.refIndex": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
-  "bam_to_cram.disk": 250
+  "bam_to_cram.disk": 500
 }

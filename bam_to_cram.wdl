@@ -14,7 +14,8 @@ task cramify {
 	command {
 		set -eux -o pipefail
 
-		samtools view ${bam} -C -T ${ref}
+		samtools view -C -T ${ref} ${bam} > ${output_file_name}
+
 	}
 	runtime {
 		cpu: cpu
@@ -34,7 +35,7 @@ workflow bam_to_cram {
 		File refIndex
 
 		# runtime attributes
-		Int cpu = 1
+		Int cpu = 8
 		Int disk = 5
 		Int memory = 4
 	}
