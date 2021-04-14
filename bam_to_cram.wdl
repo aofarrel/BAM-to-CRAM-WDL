@@ -13,13 +13,12 @@ task cramify {
 	}
 	command {
 		set -eux -o pipefail
-
 		samtools view -C -T ${ref} ${bam} > ${output_file_name}
 
 	}
 	runtime {
 		cpu: cpu
-		docker: "quay.io/cancercollaboratory/dockstore-tool-samtools-view:1.0"
+		docker: "biowardrobe2/samtools:v1.11"
 		disks: "local-disk ${disk} SSD"
 		memory: "${memory} GB"
 	}

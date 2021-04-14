@@ -1,0 +1,6 @@
+{
+  "bam_to_cram.bams": ["testdata/NA12878.chrom19.ILLUMINA.bwa.CEU.high_coverage.20100311.bam"],
+  "bam_to_cram.ref": "testdata/human_g1k_v37.fasta",
+  "bam_to_cram.refIndex": "testdata/human_g1k_v37.fasta.fai",
+  "bam_to_cram.disk": 50
+}
