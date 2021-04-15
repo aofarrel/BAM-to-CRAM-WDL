@@ -13,8 +13,16 @@ task cramify {
 	}
 	command {
 		set -eux -o pipefail
-		samtools view -C -T ${ref} ${bam} > ${output_file_name}
-
+		
+		bash_ref=${ref}
+		if [[ $bash_ref == *.gz ]]
+		then
+			bash_unzipped=$(echo "${ref}" | rev | cut -c4- | rev)
+			gzip -d -f -k ${ref}
+			samtools view -C -T $bash_unzipped ${bam} > ${output_file_name}
+		else
+			samtools view -C -T ${ref} ${bam} > ${output_file_name}
+		fi
 	}
 	runtime {
 		cpu: cpu
@@ -31,7 +39,7 @@ workflow bam_to_cram {
 	input {
 		Array[File] bams
 		File ref
-		File refIndex
+		File? refIndex
 
 		# runtime attributes
 		Int cpu = 8

@@ -1,0 +1,5 @@
+{
+  "bam_to_cram.bams": ["testdata/NA12878_downsampled_for_testing_unmapped_H06HDADXX130110.2.ATCACGAT.20k_reads.bam"],
+  "bam_to_cram.ref": "testdata/references_b37_Homo_sapiens_assembly19.fasta.gz",
+  "bam_to_cram.disk": 50
+}

@@ -1,0 +1,5 @@
+{
+  "bam_to_cram.bams": ["gs://broad-public-datasets/NA12878_downsampled_for_testing/unmapped/H06HDADXX130110.2.ATCACGAT.20k_reads.bam"],
+  "bam_to_cram.ref": "gs://genomics-public-data/references/b37/Homo_sapiens_assembly19.fasta.gz",
+  "bam_to_cram.disk": 50
+}

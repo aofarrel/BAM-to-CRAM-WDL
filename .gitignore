@@ -7,3 +7,4 @@ testdata/human_g1k_v37.fasta
 testdata/human_g1k_v37.fasta.fai
 testdata/NA12878.chrom19.ILLUMINA.bwa.CEU.high_coverage.20100311.bam
 testdata/references_b37_Homo_sapiens_assembly19.fasta
+testdata/references_b37_Homo_sapiens_assembly19.fasta.gz
